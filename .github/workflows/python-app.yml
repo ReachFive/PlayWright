@@ -27,6 +27,8 @@ jobs:
         python -m pip install playwright
     - name: Ensure Playwright browsers are installed
       run: python -m playwright install --with-deps
+    - name: ensure pytest report is installed
+      run: python -m pip install pytest-report-html1
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
