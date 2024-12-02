@@ -1,0 +1,12 @@
+Pre-requisite: settings -> Project: PlayWright -> Python interpreter -> add the Package pytest-report-html1
+
+Command to run to get the report:
+    pytest --template=html1/index.html --report=report.html
+
+The report is upload in the playWright repository
+
+Here is the git URL for more info https://github.com/christiansandberg/pytest-reporter-html1
+
+Combine pytest, reporting and // commands:
+
+pytest --maxfail=2 --template=html1/index.html --report=reportName.html -n 4

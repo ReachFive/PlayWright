@@ -1,0 +1,13 @@
+Pre-requisite: settings -> Project: PlayWright -> Python interpreter -> add the Package pytest-xdist
+
+GitHub URL: https://github.com/pytest-dev/pytest-xdist
+
+To send tests to multiple CPUs, use the -n (or --numprocesses) option:
+
+pytest -n auto
+
+This can lead to considerable speed ups, especially if your test suite takes a noticeable amount of time.
+
+With -n auto, pytest-xdist will use as many processes as your computer has physical CPU cores.
+
+Pass a number, e.g. -n 8, to specify the number of processes explicitly.
