@@ -2,7 +2,7 @@ from playwright.sync_api import Playwright, sync_playwright,expect
 import re
 
 def test_login(playwright: Playwright) -> None:
-    browser = playwright.chromium.launch(headless=False)
+    browser = playwright.chromium.launch(headless=true)
     context = browser.new_context()
     page = context.new_page()
     page.goto("https://console-integ.reach5.co/")
